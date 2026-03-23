@@ -1,0 +1,8 @@
+comunito-venv/
+__pycache__/
+*.pyc
+*.log
+config_v8.json
+config_full.json
+*.bak*
+.DS_Store

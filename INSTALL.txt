@@ -1,0 +1,3 @@
+Reemplaza TU_USUARIO por tu usuario real de GitHub y ejecuta:
+
+curl -fsSL https://raw.githubusercontent.com/TU_USUARIO/comunito_portal_v8/main/install/install.sh | bash
