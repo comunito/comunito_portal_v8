@@ -8,7 +8,7 @@ APP_DIR="/home/$ME/comunito_portal_v8"
 VENV="$APP_DIR/comunito-venv"
 SVC="/etc/systemd/system/comunito-portal.service"
 
-REPO_URL="https://github.com/TU_USUARIO/comunito_portal_v8.git"
+REPO_URL="https://github.com/comunito/comunito_portal_v8.git"
 
 if [ "$REPO_URL" = "https://github.com/TU_USUARIO/comunito_portal_v8.git" ]; then
   echo "ERROR: edita install/install.sh y reemplaza https://github.com/TU_USUARIO/comunito_portal_v8.git por tu URL real de GitHub"
