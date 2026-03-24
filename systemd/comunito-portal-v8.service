@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 User=__USER__
 WorkingDirectory=__APP_DIR__
-ExecStart=__APP_DIR__/comunito-venv/bin/python __APP_DIR__/app/app/portal_v8_main.py
+ExecStart=__APP_DIR__/comunito-venv/bin/python __APP_DIR__/app/portal_v8_main.py
 Restart=always
 RestartSec=3
 Environment=TZ=America/Mexico_City
