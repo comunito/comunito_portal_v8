@@ -84,12 +84,15 @@ echo "==> Tailscale instalado. Después ejecuta: sudo tailscale up"
 
 echo "==> 8) Crear config_v8.json si no existe"
 if [ ! -f "$APP_DIR/config_v8.json" ]; then
-  "$VENV/bin/python" - <<'PYCFG'
+  (
+    cd "$APP_DIR"
+    PYTHONPATH="$APP_DIR" "$VENV/bin/python" - <<'PYCFG'
 from app.portal_v8_models import load_cfg, save_cfg, DEFAULT_CFG_FILE
 cfg = load_cfg(DEFAULT_CFG_FILE, "config_full.json")
 save_cfg(cfg, DEFAULT_CFG_FILE)
 print("[OK] config_v8.json generado")
 PYCFG
+  )
 fi
 
 echo "==> 9) Instalar systemd service"
